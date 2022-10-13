@@ -5,6 +5,7 @@ import Popular from "../components/popular";
 import Top from "../components/top";
 import Veggies from "../components/veggies";
 import styles from "../styles/Home.module.css";
+import ScrollToTop from "react-scroll-to-top";
 
 export default function Home({ popular, veggies }) {
   return (
@@ -13,6 +14,7 @@ export default function Home({ popular, veggies }) {
       <Popular popular={popular}></Popular>
       <Veggies veggies={veggies}></Veggies>
       <Footer></Footer>
+      <ScrollToTop smooth />
     </div>
   );
 }
